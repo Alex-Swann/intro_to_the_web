@@ -23,6 +23,12 @@ get '/name' do
   'name'
 end
 
-get '/thing' do
-  'hello thing'
+get "/random-cat" do
+  @name = ["Amigo", "Oscar", "Viking"].sample
+  erb :index
 end
+
+
+get "/named-cat" do
+  @name = params[:name]
+  erb :index
