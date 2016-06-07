@@ -4,3 +4,20 @@ get '/' do
   "hello!"
 end
 
+get '/cat' do
+  "<div style='border: 3px dashed red'>
+  <img src='http://bit.ly/1eze8aE' />
+  </div>"
+end
+
+get '/secret' do
+
+end
+
+get '/name' do
+  'name'
+end
+
+get '/thing' do
+  'hello thing'
+end
