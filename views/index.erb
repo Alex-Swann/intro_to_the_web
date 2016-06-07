@@ -1,0 +1,29 @@
+
+<h1> My name is <%= @name %></h1>
+<div style='border: 3px dashed red'>
+	<img src='http://bit.ly/1eze8aE'/>
+</div>
+
+
+
+<!--
+class Address
+	def initialize(name:)
+		@name = name
+	end
+
+	def hobbies(name)
+		name.description
+	end
+end
+
+
+describe Address do
+subject(:address) { described_class.new(name: name) }
+let(:name) { double(:name, description: 'fishing') }
+
+	it 'should list a person's hobbies' do
+		expect(address.hobbies(:name)).to eq 'fishing'
+	end
+
+end -->
